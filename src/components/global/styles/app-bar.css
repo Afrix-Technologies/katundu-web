@@ -1,0 +1,127 @@
+.appBar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 4rem;
+    z-index: 99;
+    color: #eee;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 4rem;
+}
+.appBar.active {
+    background-color: #161616;
+}
+.appBar a {
+    position: relative;
+    font-size: 1.3rem;
+    margin: auto 1rem;
+    transition: all .6s ease-in-out;
+}
+
+.appBar nav .menu-nav-bar a::before {
+    content: '';
+    position: absolute;
+    bottom: -.5rem;
+    width: 100%;
+    height: .2rem;
+    background: #ff723d;
+    transform: scale(0);
+    transition: transform .4s linear;
+}
+.appBar nav .menu-nav-bar a:hover::before {
+    transform: scale(1);
+}
+.appBar nav .menu-nav-bar a.active::before {
+    transform: scale(1);
+}
+.appBar nav .menu-nav-bar a:hover {
+    opacity: 1;
+}
+.appBar nav .menu-nav-bar a {
+    opacity: .7;
+}
+.appBar nav {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.appBar nav .btns {
+    padding-left: 1rem;
+}
+.appBar nav .btns a {
+    padding: .5rem 2rem;
+    border: solid thin #ff723d;
+    border-radius: 2rem;
+}
+.appBar nav .btns a:first-child {
+    color: #ff723d;
+}
+.appBar nav .btns a:last-child {
+    background-color: #ff723d;
+}
+.appBar nav .btns a:first-child:hover {
+    background-color: #ff723d;
+    color: #eee;
+}
+.appBar nav .btns a:last-child:hover {
+    border: solid thin #ff723d;
+    color: #eee;
+    background-color: transparent;
+}
+.mobile {
+    display: none;
+}
+@media(max-width: 1025px) {
+    .appBar {
+        padding: 0 1rem;
+    }
+    .appBar a {
+        font-size: 1.1rem;
+        margin: auto .3rem;
+    }
+}
+@media(max-width: 769px) {
+    .mobile {
+        display: block;
+
+    }
+    .mobile span {
+        width: 2rem;
+        display: block;
+        height: .3rem;
+        margin: .3rem;
+        background-color: #eee;
+    }
+    .appBar nav {
+        /* display: none; */
+        position: fixed;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        width: 80%;
+        transition: transform .5s ease-in-out;
+        transform: translateX(-100%);
+        padding: 1rem 2rem;
+        z-index: 100;
+        background-color: #161616;
+        display: block;
+    }
+    .appBar nav.active {
+        transform: translateX(0);
+    }
+    .appBar nav a {
+        display: block;
+        width: 100%;
+        margin: 1rem;
+    }
+    .appBar nav .btns {
+        padding: unset;
+    }
+    .appBar nav .btns a {
+        text-align: center;
+    }
+    
+}

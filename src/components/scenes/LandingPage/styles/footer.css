@@ -1,0 +1,17 @@
+footer {
+    display: flex;
+    justify-content: flex-end;
+    padding: 1rem 4rem;
+    align-items: center;
+    color: #eee;
+}
+footer b {
+    font-weight: 700;
+    color: #ff723d;
+}
+
+@media(max-width: 481px) {
+    footer {
+        justify-content: center;
+    }
+}

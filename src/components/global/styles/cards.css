@@ -1,0 +1,51 @@
+.cards-h {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+.cards-h .card {
+    width: 24%;
+    margin: 1rem auto;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: solid thin transparent;
+}
+.cards-h .card:nth-child(2) {
+    border-right-color: #eeeeee33;
+    border-left-color: #eeeeee33;
+}
+.cards-h .card:nth-child(3) {
+    border-right-color: #eeeeee33;
+}
+.cards-h .card:last-child {
+    border-color: transparent;
+}
+.cards-h .card h2 {
+    font-size: 1.7rem;
+    color: #eee;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    text-transform: capitalize;
+}
+.cards-h .card p {
+    color: #e2dbdb;
+}
+
+@media(max-width: 769px) {
+    .cards-h .card {
+        width: 49%;
+        border-color: #eeeeee33;
+    }
+    .cards-h .card h2 {
+        font-size: 1.3rem;
+    }
+}
+@media(max-width: 481px) {
+    .cards-h .card {
+        width: 98%;
+    }
+}

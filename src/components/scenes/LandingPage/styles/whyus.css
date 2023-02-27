@@ -1,0 +1,64 @@
+.why-us-section h2 {
+    font-size: 3rem;
+    color: #ff723d;
+    padding: 4rem;
+}
+
+.card-container {
+    width: 100%;
+    padding: 0 4rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    color: #eee;
+}
+.card-container .card {
+    width: 30%;
+    padding: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1.4rem auto;
+    background-color: #161616;
+    border-radius: .9rem;
+    font-size: 1.2rem;
+}
+.card-container .card.space {
+    background-color: transparent !important;
+}
+.learn-more {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 4rem;
+}
+.learn-more a {
+    border-radius: 3rem;
+    font-size: 1.3rem;
+    border: solid thin #ff723d;
+    padding: .8rem 2rem;
+    transition: all .6s ease-in-out;
+}
+.learn-more a:hover {
+    color: #eee;
+    background-color: #ff723d;
+}
+
+@media(max-width: 789px) {
+    .card-container .card.space {
+        display: none;
+    }
+    .card-container {
+        padding: unset;
+        padding: 1rem;
+    }
+    .card-container .card {
+        width: 45%;
+        padding: 3rem;
+    }
+}
+@media(max-width: 481px) {
+    .card-container .card {
+        width: 100%;
+    }
+}

@@ -1,0 +1,32 @@
+.scene-intro {
+    width: 70%;
+    margin: 2rem auto;
+}
+.section-header {
+    padding: 1rem;
+    color: #ff723d;
+    text-transform: capitalize;
+    font-size: 2rem;
+    text-align: center;
+}
+.scene-intro div {
+    line-height: 1.69;
+    font-size: 1.29rem;
+    display: flex;
+    justify-content: center;
+}
+
+@media(max-width: 769px) {
+    .scene-intro .section-header {
+        font-size: 1.5rem;
+    }
+}
+
+@media(max-width: 481px) {
+    .scene-intro {
+        width: 100%;
+    }
+    .section-header {
+        font-size: 1.2rem;
+    }
+}
