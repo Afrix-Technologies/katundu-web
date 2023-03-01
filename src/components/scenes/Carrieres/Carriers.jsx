@@ -3,7 +3,11 @@ import FirstInfo from "./FirstInfo";
 import HeroSection from "./HeroSection";
 import "./styles/carriers.css";
 
-import img from "./../../../assets/images/cargo.png";
+import img from "./../../../assets/images/carrier2.jpg";
+import img2 from "./../../../assets/images/carrier1.jpg";
+import img3 from "./../../../assets/images/trucks.jpg";
+
+
 import Footer from "../LandingPage/Footer";
 
 const Carriers = () => {
@@ -92,7 +96,7 @@ const Carriers = () => {
                 <SectionSideBySide 
                     title="Haul without haseel" 
                     fdRR="row"
-                    img={img}
+                    img={img2}
                     para="
                         With everything done easily through our app, you'll spend less time on chasing freights and more on what matters 
                     "
@@ -105,7 +109,7 @@ const Carriers = () => {
                 <SectionSideBySide 
                     title="loads for all" 
                     fdRR="row-reverse"
-                    img={img}
+                    img={img3}
                     para="
                         Carriers of all Sizes can sign up and Book their first loads in just minuets
                     "

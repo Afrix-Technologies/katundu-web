@@ -1,6 +1,8 @@
 import ImageCard from "../../global/ImageCard";
 import SceneIntro from "../../global/SceneIntro";
 import img1 from "./../../../assets/images/cargo.png";
+import img2 from "./../../../assets/images/carrier1.jpg";
+import img3 from "./../../../assets/images/shippers.jpg";
 
 const SolvingProblems = () => {
     const cardData = [
@@ -8,14 +10,14 @@ const SolvingProblems = () => {
             key: 1,
             title: "For Shippers",
             anchor: "/readmore/forshippers",
-            img: img1,
+            img: img3,
             para: "By automationg the matching, pricing and scheduling of trucks, we segnifically reduce shippers costs plus, with the unique approch to carrier companies, we get each load deliverd safely and on time.",
         },
         {
             key: 2,
             title: "For Carries",
             anchor: "/readmore/forcarriers",
-            img: img1,
+            img: img2,
             para: "Katundu helpscarriers of all sizes earn more the less hassle. our app makes it easy for carriers to find, bid on. and haul loads that keep their trucks full and earning on the lanes they like to run."
         },
         {

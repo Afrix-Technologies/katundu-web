@@ -1,6 +1,9 @@
 import ImageCard from "../../global/ImageCard";
 import SceneIntro from "../../global/SceneIntro";
-import img1 from "./../../../assets/images/cargo.png";
+
+import img1 from "./../../../assets/images/shippers.jpg";
+import img2 from "./../../../assets/images/truck.jpg";
+import img3 from "./../../../assets/images/cargo.png";
 
 const FirstInfo = () => {
     const cardData = [
@@ -15,14 +18,14 @@ const FirstInfo = () => {
             key: 2,
             title: "Dedicated capacity",
             anchor: "/readmore/dedicatedcapacity",
-            img: img1,
+            img: img2,
             para: "The predictable pricing and consistent service you expect. Now with the speed and flexibility you’ve always wanted."
         },
         {
             key: 3,
             title: "Primary",
             anchor: "/readmore/primary",
-            img: img1,
+            img: img3,
             para: "Guaranteed savings with Guaranteed Primary. Save money in soft markets and get 100% tender acceptance in tight markets."
         }
     ];

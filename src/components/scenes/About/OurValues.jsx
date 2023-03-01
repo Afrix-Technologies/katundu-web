@@ -1,6 +1,9 @@
 import SectionSideBySide from "../../global/SectionSideBySide"
 
-import img from "./../../../assets/images/cargo.png"
+import img from "./../../../assets/images/teamValue.jpg"
+import img2 from "./../../../assets/images/carrier1.jpg"
+import img3 from "./../../../assets/images/trucks.jpg"
+import img4 from "./../../../assets/images/team.jpg"
 
 const OurValues = () => {
     return (
@@ -15,7 +18,7 @@ const OurValues = () => {
                     "
                     link="/readmore/ourvalues"
 
-                    img={img}
+                    img={img3}
 
                     fdRR="row-reverse"
                 />
@@ -30,7 +33,7 @@ const OurValues = () => {
                     "
                     link="/readmore/ourvalues"
 
-                    img={img}
+                    img={img2}
 
                     fdRR="row"
                 />
@@ -60,7 +63,7 @@ const OurValues = () => {
                     "
                     link="/readmore/ourvalues"
 
-                    img={img}
+                    img={img4}
 
                     fdRR="row"
                 />

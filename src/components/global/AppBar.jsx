@@ -2,9 +2,9 @@ import React from "react";
 
 import { useState } from "react";
 
-import { Link } from "react-router-dom";
+import { Link,  } from "react-router-dom";
 
-import "./styles/app-bar.css";
+import "./styles/aNavLinkpp-bar.css";
 
 const AppBar = () => {
     
@@ -36,15 +36,15 @@ const AppBar = () => {
                 </div>
                 <nav className={menuBtn ? "active" : ""}>
                     <div className="menu-nav-bar">
-                        <Link onClick={menuBtn && mobileMenu} to="/shippers">Shippers</Link>
-                        <Link onClick={menuBtn && mobileMenu} to="/carries">Carriers</Link>
-                        <Link onClick={menuBtn && mobileMenu} to="/features">Features</Link>
-                        <Link onClick={menuBtn && mobileMenu} to="/about">About Us</Link>
+                        <NavLink activeClassName="active" onClick={menuBtn && mobileMenu} to="/shippers">Shippers</NavLink>
+                        <NavLink activeClassName="active" onClick={menuBtn && mobileMenu} to="/carries">Carriers</NavLink>
+                        <NavLink activeClassName="active" onClick={menuBtn && mobileMenu} to="/features">Features</NavLink>
+                        <NavLink activeClassName="active" onClick={menuBtn && mobileMenu} to="/about">About Us</NavLink>
                     </div>
 
                     <div className="btns">
-                        <Link onClick={menuBtn && mobileMenu} to="/sign-up">Sign Up</Link>
-                        <Link onClick={menuBtn && mobileMenu} to="/login">Login</Link>
+                        <NavLink onClick={menuBtn && mobileMenu} to="/sign-up">Sign Up</NavLink>
+                        <NavLink onClick={menuBtn && mobileMenu} to="/login">Login</NavLink>
                     </div>
                 </nav>
             </div>

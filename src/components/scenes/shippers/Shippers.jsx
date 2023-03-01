@@ -3,7 +3,9 @@ import FirstInfo from "./FirstInfo";
 import HeroSection from "./HeroSection";
 import SectionSideBySide from "../../global/SectionSideBySide";
 
-import img from "./../../../assets/images/cargo.png";
+import img from "./../../../assets/images/trucks.jpg";
+import img2 from "./../../../assets/images/carrier1.jpg";
+import img3 from "./../../../assets/images/general.jpg";
 
 const Shippers = () => {
     const points = [
@@ -73,7 +75,7 @@ const Shippers = () => {
                 <SectionSideBySide 
                     title="Hi-Fi Visisblity" 
                     fdRR="row"
-                    img={img}
+                    img={img2}
                     para="
                         A new class of visibility and transparency that shippers tell us they have never seen before — not from any other transportation provider in their routing guide.
                     "
@@ -86,7 +88,7 @@ const Shippers = () => {
                 <SectionSideBySide 
                     title="Tech that drives efficiency" 
                     fdRR="row-reverse"
-                    img={img}
+                    img={img3}
                     para="
                         Tendering, pricing, and matching happens in minutes, identifying the best, most efficient truck to move every shipment. The result? Better service, lower costs, and reduced empty miles.
                     "

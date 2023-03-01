@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 
 import "./styles/image-card.css";
+import forwardArrow from "./../../assets/images//icons/arrow-f.png";
 
 const ImageCard = (props) => {
     const CardElement = props.numberCardsAndInfo.map (cardItem => {
@@ -17,7 +18,7 @@ const ImageCard = (props) => {
                     </p>
                     
                     {
-                        (cardItem.anchor) ? <Link to={cardItem.anchor}>Read More</Link> : <div className="a"></div>
+                        (cardItem.anchor) ? <Link to={cardItem.anchor}><img style={{width: "50%"}} src={forwardArrow} alt="Icon"/></Link> : <div className="a"></div>
                     }
                 </div>
             </div>
