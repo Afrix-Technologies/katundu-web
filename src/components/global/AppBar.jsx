@@ -25,7 +25,7 @@ const AppBar = () => {
                 <div className="logo">
                     <Link to="/"><h1>Katundu.</h1></Link>
                 </div>
-                <div onClick={mobileMenu} className="mobile ">
+                <div onClick={mobileMenu} className="mobile">
                     <span></span> 
                     <span></span> 
                     <span></span> 
