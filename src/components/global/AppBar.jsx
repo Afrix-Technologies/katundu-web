@@ -2,7 +2,7 @@ import React from "react";
 
 import { useState } from "react";
 
-import { Link,  } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 import "./styles/aNavLinkpp-bar.css";
 
@@ -18,10 +18,6 @@ const AppBar = () => {
         }
     }
     
-    // const handleActivePage = () => {
-    //     const anchor = window.location.href.split("/");
-    //     setActivePage(anchor[anchor.length - 1]);
-    // }
     
     return (
         <>
