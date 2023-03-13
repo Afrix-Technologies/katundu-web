@@ -5,6 +5,11 @@ on:
     branches: [ gcp_deploy ]
 
 jobs:
+  job_id:
+    permissions:
+      contents: 'read'
+      id-token: 'write'
+      
   build:
     runs-on: ubuntu-latest
 
